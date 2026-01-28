@@ -129,6 +129,48 @@ curl https://zelapioffciall.koyeb.app/api/v1/github/user/biezz-2
 }
 ```
 
+## 📂 Project Structure
+
+A detailed overview of the project's organization:
+
+```bash
+portfolio/
+├── src/
+│   ├── app/                 # Next.js App Router root
+│   │   ├── globals.css      # Global styles & Tailwind directives
+│   │   └── layout.tsx       # Root layout with fonts & providers
+│   ├── components/
+│   │   ├── effects/         # Advanced visual effects
+│   │   │   ├── lamp.tsx            # Hero section lamp animation
+│   │   │   ├── aurora.tsx          # Background aurora effect
+│   │   │   └── sparkes.tsx         # Particle sparkle effects
+│   │   ├── ui/              # Reusable UI components
+│   │   │   ├── bento-grid.tsx      # Bento style layout grid
+│   │   │   ├── infinite-cards.tsx  # Moving testimonials
+│   │   │   └── text-generate.tsx   # Typing text effect
+│   │   └── sections/        # Page sections (Hero, Features, etc.)
+│   └── lib/                 # Utilities and helpers
+├── public/                  # Static assets
+└── tailwind.config.js       # Tailwind & animation config
+```
+
+## 🧩 Key Components Details
+
+### 💡 Lamp Effect (`components/effects/lamp.tsx`)
+The signature visual element of the landing page. It uses `framer-motion` to create a dynamic, glowing "lamp" effect that illuminates the headline.
+- **Tech**: Framer Motion, CSS Gradients
+- **Usage**: Wraps the Hero section title.
+
+### 🍱 Bento Grid (`components/ui/bento-grid.tsx`)
+A modular grid layout system inspired by modern OS designs. Used to display features and services in a clean, organized, and responsive manner.
+- **Tech**: CSS Grid, Tailwind Utility Classes
+- **Features**: Responsive spans, hover effects.
+
+### 📝 Text Generate Effect (`components/ui/text-generate-effect.tsx`)
+An engaging text animation that progressively reveals words as if they are being typed or decoding.
+- **Tech**: Framer Motion `stagger` effects.
+- **Purpose**: Increases user engagement on landing.
+
 ## 🤝 Contribution
 
 Contributions are welcome! Please feel free to submit a Pull Request.
