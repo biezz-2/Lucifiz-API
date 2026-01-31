@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
   # ✦ LUCIFIZ ✦
@@ -36,7 +37,7 @@
     </td>
     <td width="50%">
       <h3>⚡ Flash Downloads</h3>
-      <p>High-speed media downloader supporting major platforms including TikTok, YouTube, Instagram, and Twitter/X. Retrieve content instantly.</p>
+      <p>High-speed media downloader supporting major platforms including TikTok, YouTube, Instagram, and Twitter/X. Retrieve content instantly without watermarks.</p>
     </td>
   </tr>
   <tr>
@@ -51,7 +52,7 @@
   </tr>
 </table>
 
-## 🚀 Getting Started
+## � Getting Started
 
 ### Prerequisites
 
@@ -63,18 +64,22 @@ Ensure you have the following installed:
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/biezz-2/portfolio.git
-    cd portfolio
+    git clone https://github.com/biezz-2/Lucifiz-API.git
+    cd Lucifiz-API
     ```
 
 2.  **Install dependencies**
     ```bash
     npm install
+    # or
+    bun install
     ```
 
 3.  **Run the development server**
     ```bash
     npm run dev
+    # or
+    bun run dev
     ```
 
 4.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -103,17 +108,19 @@ graph TD
 ## 🧰 Tech Stack
 
 **Frontend & Core:**
--   **Framework:** Next.js 14 (App Router)
+-   **Framework:** Next.js 14+ (App Router)
 -   **Styling:** Tailwind CSS, Framer Motion (Animations)
 -   **Language:** TypeScript
 -   **Icons:** Lucide React
+-   **Tools:** yt-dlp (Media Extraction)
 
 ## 📚 API Documentation
 
 Example usage of the LUCIFIZ API:
 
 ```bash
-curl https://zelapioffciall.koyeb.app/api/v1/github/user/biezz-2
+# Example Request to GitHub User Data Endpoint
+curl https://lucifiz.api/api/v1/github/user/biezz-2
 ```
 
 **Response Preview:**
@@ -134,24 +141,25 @@ curl https://zelapioffciall.koyeb.app/api/v1/github/user/biezz-2
 A detailed overview of the project's organization:
 
 ```bash
-portfolio/
+Lucifiz-API/
 ├── src/
 │   ├── app/                 # Next.js App Router root
+│   │   ├── api/             # API Routes (Downloaders, Tools)
 │   │   ├── globals.css      # Global styles & Tailwind directives
 │   │   └── layout.tsx       # Root layout with fonts & providers
 │   ├── components/
-│   │   ├── effects/         # Advanced visual effects
+│   │   ├── effects/         # Advanced visual effects (Planned)
 │   │   │   ├── lamp.tsx            # Hero section lamp animation
 │   │   │   ├── aurora.tsx          # Background aurora effect
 │   │   │   └── sparkes.tsx         # Particle sparkle effects
-│   │   ├── ui/              # Reusable UI components
+│   │   ├── ui/              # Reusable UI components (Shadcn/UI)
 │   │   │   ├── bento-grid.tsx      # Bento style layout grid
 │   │   │   ├── infinite-cards.tsx  # Moving testimonials
 │   │   │   └── text-generate.tsx   # Typing text effect
 │   │   └── sections/        # Page sections (Hero, Features, etc.)
 │   └── lib/                 # Utilities and helpers
 ├── public/                  # Static assets
-└── tailwind.config.js       # Tailwind & animation config
+└── tailwind.config.ts       # Tailwind & animation config
 ```
 
 ## 🧩 Key Components Details
@@ -181,7 +189,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-## 📄 License
+## � License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
@@ -194,3 +202,35 @@ Distributed under the MIT License. See `LICENSE` for more information.
     <img src="https://img.shields.io/badge/Back%20to%20top-⬆️-0a0a0f?style=flat-square" alt="Back to top">
   </a>
 </div>
+=======
+# Link in Bio boilerplate
+
+*Automatically synced with your [v0.app](https://v0.app) deployments*
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/biezz-2s-projects/edufest-infinity-link-in-bio-boilerplate)
+[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/pLivEiCb5ID)
+
+## Overview
+
+This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
+Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+
+## Deployment
+
+Your project is live at:
+
+**[https://vercel.com/biezz-2s-projects/edufest-infinity-link-in-bio-boilerplate](https://vercel.com/biezz-2s-projects/edufest-infinity-link-in-bio-boilerplate)**
+
+## Build your app
+
+Continue building your app on:
+
+**[https://v0.app/chat/pLivEiCb5ID](https://v0.app/chat/pLivEiCb5ID)**
+
+## How It Works
+
+1. Create and modify your project using [v0.app](https://v0.app)
+2. Deploy your chats from the v0 interface
+3. Changes are automatically pushed to this repository
+4. Vercel deploys the latest version from this repository
+>>>>>>> 5fbbb0b565f181c555ca9b2dd3e5161d22496582

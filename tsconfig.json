@@ -1,21 +1,32 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ES2017",
+=======
+>>>>>>> 5fbbb0b565f181c555ca9b2dd3e5161d22496582
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
+<<<<<<< HEAD
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
+    "noImplicitAny": false,
+=======
+    "target": "ES6",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+>>>>>>> 5fbbb0b565f181c555ca9b2dd3e5161d22496582
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -24,7 +35,11 @@
     ],
     "paths": {
       "@/*": [
+<<<<<<< HEAD
         "./src/*"
+=======
+        "./*"
+>>>>>>> 5fbbb0b565f181c555ca9b2dd3e5161d22496582
       ]
     }
   },
@@ -33,8 +48,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
