@@ -1,0 +1,57 @@
+"use client";
+import { useEffect } from "react";
+import { motion, useAnimate } from "framer-motion";
+import { cn } from "@/lib/utils";
+
+export const TextGenerateEffect = ({
+    words,
+    className,
+}: {
+    words: string;
+    className?: string;
+}) => {
+    const [scope, animate] = useAnimate();
+    let wordsArray = words.split(" ");
+    useEffect(() => {
+        animate(
+            "span",
+            {
+                opacity: 1,
+            },
+            {
+                duration: 2,
+                delay: 0.2, // stagger omitted here for bulk effect, or use stagger(0.2)
+            }
+        );
+    }, [animate]);
+
+    const renderWords = () => {
+        return (
+            <motion.div ref={scope}>
+                {wordsArray.map((word, idx) => {
+                    return (
+                        <motion.span
+                            key={word + idx}
+                            className="dark:text-white text-black opacity-0"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5, delay: idx * 0.1 }}
+                        >
+                            {word}{" "}
+                        </motion.span>
+                    );
+                })}
+            </motion.div>
+        );
+    };
+
+    return (
+        <div className={cn("font-bold", className)}>
+            <div className="mt-4">
+                <div className=" dark:text-white text-black leading-snug tracking-wide">
+                    {renderWords()}
+                </div>
+            </div>
+        </div>
+    );
+};
